@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #100a20;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2{
+    text-align: center;
+    margin: 20px;
+}
+
+iframe{
+    border: none;
+}
+
+#iframeList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#iframeList div{
+    margin: 15px;
+}
