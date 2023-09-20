@@ -12,10 +12,13 @@ async function createIframesFromJSON() {
         const iframe = document.createElement("iframe");
 
         title.textContent = item.dr;
-        iframe.src = item.url;
-        iframe.width = "560";
-        iframe.height = "315";
+        iframe.src = item.url + '&autoplay=1'; // Adiciona o parâmetro de autoplay
+        iframe.width = "100%";
+        iframe.height = "400";
         iframe.allowFullscreen = true;
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('gesture', 'media');
+        iframe.setAttribute('allow', 'autoplay');
 
         iframeContainer.appendChild(title);
         iframeContainer.appendChild(iframe);
