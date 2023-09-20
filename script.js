@@ -13,8 +13,8 @@ async function createIframesFromJSON() {
 
         title.textContent = item.dr;
         iframe.src = item.url + '&autoplay=1'; // Adiciona o parâmetro de autoplay
-        iframe.width = "400";
-        iframe.height = "300";
+        iframe.width = "100%";
+        iframe.height = "400";
         iframe.allowFullscreen = true;
         iframe.setAttribute('frameborder', '0');
         iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
